@@ -50,4 +50,5 @@ In order to access the DB, use the name of the service as host, and the specifie
 - DB_PASSWORD=secret
 
 you can access from a SQL client like Beekeeper using this configuration (password= "secret"):
+![image](https://user-images.githubusercontent.com/44556380/163691753-22c5ac81-1205-4c45-b214-4d0a276aa122.png)
 
