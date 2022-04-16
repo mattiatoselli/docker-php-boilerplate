@@ -33,3 +33,21 @@ If you need to use npm in your application, just leave the docker-compose file a
 As an example, if you need to install and compile assets on Laravel, launch these commands:
 1. docker-compose run --rm npm install
 2. docker-compose run --rm npm run dev
+
+## Using Artisan on Laravel
+Laravel leverages Database interacion on a useful CLI called Artisan, you may want to acess it. As for npm, you can do it by typing the corresponding commands on a terminal using the artisan service (as always, if you don't plan to use it, just comment the docker-compose file before building the environment, you can always use it later).
+
+As an example, you can migrate tables using the following command:
+- "docker-compose run --rm artisan migrate"
+
+## Accessing to MySql:
+In order to access the DB, use the name of the service as host, and the specified user and password used in the environment key in the mysql service. As an example, if you do not edit the docker-compose file, this is the default configuration:
+- DB_CONNECTION=mysql
+- DB_HOST=mysql
+- DB_PORT=3306
+- DB_DATABASE=laravel
+- DB_USERNAME=laravel
+- DB_PASSWORD=secret
+
+you can access from a SQL client like Beekeeper using this configuration (password= "secret"):
+
