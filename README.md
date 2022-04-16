@@ -26,3 +26,10 @@ As an example, I'll provide the intallation guide for Laravel here:
 You can use composer by calling the composer docker service, the container will spin up, execute the command, and will be destroyed after the command has been executed.
 You can launch every command you would launch in a normal machine with composer installed on it, as an example, you can use:
 "docker-compose run --rm composer dump-autoload".
+
+## Using npm
+If you need to use npm in your application, just leave the docker-compose file as it is, otherwise comment all the entries for the npm service.
+
+As an example, if you need to install and compile assets on Laravel, launch these commands:
+1. docker-compose run --rm npm install
+2. docker-compose run --rm npm run dev
