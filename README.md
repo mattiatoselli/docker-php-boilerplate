@@ -22,3 +22,7 @@ As an example, I'll provide the intallation guide for Laravel here:
 2. Grant again all permissions in the root folder (chmod -R 777 .).
 3.  You'll be able to access from http://localhost to your laravel homepage.
 
+## Using Composer
+You can use composer by calling the composer docker service, the container will spin up, execute the command, and will be destroyed after the command has been executed.
+You can launch every command you would launch in a normal machine with composer installed on it, as an example, you can use:
+"docker-compose run --rm composer dump-autoload".
