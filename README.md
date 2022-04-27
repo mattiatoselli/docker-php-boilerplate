@@ -9,7 +9,7 @@ Note that if ou are on Windows, you'll need also to have WSL installed.
 1. Clone this project.
 2. Launch the "docker-compose up --build" command.
 3. Go to the root directory of your project and launch the command "chmod -R 777 ." (note that you may need to launch the command as sudo user if you are on unix-like systems).
-4. If you are on Windows machines, you'll need to launch the command mentioned in point 3 using WSL, open from your search WSL, go to the root directory of the project, and launch te command "chmod -R 777 .".
+4. If you are on Windows machines, you'll need to launch the command mentioned in point 3 using WSL, open from your search WSL, go to the root directory of the project, and launch te command "chmod -R 777 ." otherwise, just launch from the windows command line this command: "icacls "C:\path_to_root" /q /c /t /grant Users:F".
 
 ## Using Vanilla PHP
 This docker porject is already ready to use, you'll only need to be sure to have a file located in "src/public" called "index.php".
